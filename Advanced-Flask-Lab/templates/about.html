@@ -10,7 +10,14 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+				{% for post in posts_c %}   
+                <div>
+                  <a href="">
+                        <img src="{{post}}" alt="" />
+                        <h3>{{posts_c[post]}}</h3>
+                      </a>
+                </div>  
+                {% endfor%}
         <center>
           <h1>About Me</h1>
           
